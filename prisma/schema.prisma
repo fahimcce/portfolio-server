@@ -16,7 +16,7 @@ model Experience {
   description String?
 }
 
-model PersonalProject {
+model Project {
   id          String   @id @default(uuid())
   name        String
   photo       String?
