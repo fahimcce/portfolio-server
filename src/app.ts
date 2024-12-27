@@ -8,9 +8,19 @@ import notFound from "./app/middlewares/notFound";
 // import router from "./app/routes";
 
 const app: Application = express();
+// app.use(
+//   cors({
+//     origin: ["http://localhost:3000"],
+//     credentials: true,
+//   })
+// );
+
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: [
+      "http://localhost:3000",
+      "https://dashboard-hazel-eight-40.vercel.app",
+    ],
     credentials: true,
   })
 );
