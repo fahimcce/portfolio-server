@@ -3,23 +3,14 @@ import cors from "cors";
 import router from "./app/routes";
 import globalErrorHandler from "./app/middlewares/globalErrorHandler";
 import notFound from "./app/middlewares/notFound";
-// import globalErrorHandler from "./app/middlewares/globalErrorHandler";
-// import notFound from "./app/middlewares/notFound";
-// import router from "./app/routes";
 
 const app: Application = express();
-// app.use(
-//   cors({
-//     origin: ["http://localhost:3000"],
-//     credentials: true,
-//   })
-// );
-
 app.use(
   cors({
     origin: [
       "http://localhost:3000",
       "https://dashboard-hazel-eight-40.vercel.app",
+      "https://forhadfahim.vercel.app",
     ],
     credentials: true,
   })

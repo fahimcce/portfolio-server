@@ -8,18 +8,12 @@ const cors_1 = __importDefault(require("cors"));
 const routes_1 = __importDefault(require("./app/routes"));
 const globalErrorHandler_1 = __importDefault(require("./app/middlewares/globalErrorHandler"));
 const notFound_1 = __importDefault(require("./app/middlewares/notFound"));
-// import globalErrorHandler from "./app/middlewares/globalErrorHandler";
-// import notFound from "./app/middlewares/notFound";
-// import router from "./app/routes";
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)({
-    origin: ["http://localhost:3000"],
-    credentials: true,
-}));
-app.use((0, cors_1.default)({
     origin: [
-        "http://localhost:3000/",
-        "https://dashboard-hazel-eight-40.vercel.app/",
+        "http://localhost:3000",
+        "https://dashboard-hazel-eight-40.vercel.app",
+        "https://forhadfahim.vercel.app",
     ],
     credentials: true,
 }));

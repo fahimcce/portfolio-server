@@ -24,7 +24,7 @@ const moduleRoutes = [
         route: skill_routes_1.SkillRoutes,
     },
     {
-        path: "/experience",
+        path: "/experiences",
         route: experience_routes_1.ExperienceRoutes,
     },
     {
